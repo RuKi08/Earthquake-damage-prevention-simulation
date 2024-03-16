@@ -16,7 +16,7 @@ public class earthquakeCode : MonoBehaviour
     void Start()
     {
         cam = transform;
-        rb = gameObject.GetComponent<Rigidbody>();
+        //rb = gameObject.GetComponent<Rigidbody>();
     }
  
     // Update is called once per frame
@@ -33,20 +33,19 @@ public class earthquakeCode : MonoBehaviour
         Vector3 originPosition = cam.localPosition;
         float elapsedTime = 0.0f;
 
-        //Vector3 randomPoint = originPosition + Random.insideUnitSphere * shakeAmount;
-        Vector3 randomPoint = Random.insideUnitSphere * shakeAmount;
+        Vector3 randomPoint = originPosition + Random.insideUnitSphere * shakeAmount;
  
         while (elapsedTime < shakeTime)
         {
-            rb.velocity = randomPoint;
-            //cam.localPosition = Vector3.Lerp(cam.localPosition, new Vector3(randomPoint.x, randomPoint.y/10, randomPoint.z), Time.deltaTime * shakeSpeed);
+            //rb.velocity = randomPoint;
+            cam.localPosition = Vector3.Lerp(cam.localPosition, new Vector3(randomPoint.x, randomPoint.y, randomPoint.z), Time.deltaTime * shakeSpeed);
  
             yield return null;
  
             elapsedTime += Time.deltaTime;
         }
 
-        //cam.localPosition = Vector3.Lerp(cam.localPosition, originPosition, Time.deltaTime * shakeSpeed/100);
+        cam.localPosition = Vector3.Lerp(cam.localPosition, originPosition, Time.deltaTime * shakeSpeed);
         //cam.localPosition = originPosition;
     }
 }
