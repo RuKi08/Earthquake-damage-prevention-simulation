@@ -6,46 +6,28 @@ public class earthquakeCode : MonoBehaviour
 {
     public bool play;
 
-    public float shakeTime = 1.0f;
     public float shakeSpeed = 2.0f;
     public float shakeAmount = 1.0f;
  
-    private Transform cam;
     Rigidbody rb;
-    // Start is called before the first frame update
+
+    Vector3 originPosition;
+    
     void Start()
     {
-        cam = transform;
-        //rb = gameObject.GetComponent<Rigidbody>();
+        rb = gameObject.GetComponent<Rigidbody>();
+        originPosition = transform.localPosition;
     }
- 
-    // Update is called once per frame
+
     void Update()
     {
         if (play)
         {
-            StartCoroutine(Shake());
-        }
-    }
- 
-    IEnumerator Shake()
-    {
-        Vector3 originPosition = cam.localPosition;
-        float elapsedTime = 0.0f;
+            float elapsedTime = 0.0f;
 
-        Vector3 randomPoint = originPosition + Random.insideUnitSphere * shakeAmount;
- 
-        while (elapsedTime < shakeTime)
-        {
-            //rb.velocity = randomPoint;
-            cam.localPosition = Vector3.Lerp(cam.localPosition, new Vector3(randomPoint.x, randomPoint.y, randomPoint.z), Time.deltaTime * shakeSpeed);
- 
-            yield return null;
- 
-            elapsedTime += Time.deltaTime;
-        }
+            float x = Mathf.Cos(Time.time * 360 * Mathf.Deg2Rad * shakeSpeed)*shakeAmount;
 
-        cam.localPosition = Vector3.Lerp(cam.localPosition, originPosition, Time.deltaTime * shakeSpeed);
-        //cam.localPosition = originPosition;
+            rb.velocity = new Vector3(x, 0, 0);
+            }
     }
 }
