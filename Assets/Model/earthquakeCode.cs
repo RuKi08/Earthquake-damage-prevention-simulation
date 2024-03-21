@@ -23,10 +23,7 @@ public class earthquakeCode : MonoBehaviour
     {
         if (play)
         {
-            float elapsedTime = 0.0f;
-
-            float y = Mathf.Sin(Time.time * 360 * Mathf.Deg2Rad * shakeSpeed)*shakeAmount;
-
+            float y = Mathf.Cos(Time.time * 360 * Mathf.Deg2Rad * shakeSpeed)*shakeAmount;
             rb.velocity = new Vector3(0, 0, y);
             }
     }

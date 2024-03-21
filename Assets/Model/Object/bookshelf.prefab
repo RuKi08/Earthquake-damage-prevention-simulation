@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 21a8631b305b7164b94cce5802e22705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -155,7 +155,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 21a8631b305b7164b94cce5802e22705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -250,7 +250,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 21a8631b305b7164b94cce5802e22705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -294,7 +294,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9164761352685833201}
-  - component: {fileID: 5349536309330222013}
   m_Layer: 0
   m_Name: shelf
   m_TagString: Untagged
@@ -323,22 +322,6 @@ Transform:
   m_Father: {fileID: 2682192725998134629}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &5349536309330222013
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453208252299866113}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
 --- !u!1 &1467876882619593206
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +488,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 21a8631b305b7164b94cce5802e22705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -600,7 +583,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 21a8631b305b7164b94cce5802e22705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -695,7 +678,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 21a8631b305b7164b94cce5802e22705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -790,7 +773,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 21a8631b305b7164b94cce5802e22705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -835,6 +818,10 @@ PrefabInstance:
     - target: {fileID: 3343522838994137541, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_Name
       value: book (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689764154838084962, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9111861549713590057, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_RootOrder
@@ -906,6 +893,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (7)
@@ -980,6 +971,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -3744659901182404743, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 551471790341087643, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
       propertyPath: m_Name
       value: book (2)
@@ -1054,6 +1049,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (45)
@@ -1132,6 +1131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4711823096418028291, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4970432566781618533, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -1206,6 +1209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 7689764154838084962, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9111861549713590057, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -1276,6 +1283,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (4)
@@ -1350,6 +1361,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (32)
@@ -1424,6 +1439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -6563585350957894135, guid: a12125838c204f74797a48f29359fbf1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648416689607862230, guid: a12125838c204f74797a48f29359fbf1, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1502,6 +1521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4711823096418028291, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4970432566781618533, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1576,6 +1599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7689764154838084962, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9111861549713590057, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1646,6 +1673,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (40)
@@ -1720,6 +1751,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -6563585350957894135, guid: a12125838c204f74797a48f29359fbf1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648416689607862230, guid: a12125838c204f74797a48f29359fbf1, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -1854,6 +1889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4440196913269370694, guid: cfc283cb3f11ae941aa300990604b6cf, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc283cb3f11ae941aa300990604b6cf, type: 3}
 --- !u!4 &3370139007728846572 stripped
@@ -1868,6 +1907,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (24)
@@ -1942,6 +1985,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (15)
@@ -2019,6 +2066,10 @@ PrefabInstance:
     - target: {fileID: 3343522838994137541, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_Name
       value: book (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689764154838084962, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9111861549713590057, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_RootOrder
@@ -2150,6 +2201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4440196913269370694, guid: cfc283cb3f11ae941aa300990604b6cf, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc283cb3f11ae941aa300990604b6cf, type: 3}
 --- !u!4 &2803161743362443875 stripped
@@ -2167,6 +2222,10 @@ PrefabInstance:
     - target: {fileID: 3343522838994137541, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_Name
       value: book (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689764154838084962, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9111861549713590057, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_RootOrder
@@ -2298,6 +2357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4440196913269370694, guid: cfc283cb3f11ae941aa300990604b6cf, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc283cb3f11ae941aa300990604b6cf, type: 3}
 --- !u!4 &2368567080720238277 stripped
@@ -2312,6 +2375,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -3744659901182404743, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 551471790341087643, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
       propertyPath: m_Name
       value: book (8)
@@ -2386,6 +2453,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -4304529744566297767, guid: a3bd28ef0fbf3ca4c9b66e0452d1c57d, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261250224554472981, guid: a3bd28ef0fbf3ca4c9b66e0452d1c57d, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -2460,6 +2531,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -6563585350957894135, guid: a12125838c204f74797a48f29359fbf1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648416689607862230, guid: a12125838c204f74797a48f29359fbf1, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -2534,6 +2609,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -6563585350957894135, guid: a12125838c204f74797a48f29359fbf1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648416689607862230, guid: a12125838c204f74797a48f29359fbf1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2608,6 +2687,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -3744659901182404743, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 551471790341087643, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
       propertyPath: m_Name
       value: book (17)
@@ -2686,6 +2769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4711823096418028291, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4970432566781618533, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -2760,6 +2847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4711823096418028291, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4970432566781618533, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -2830,6 +2921,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (31)
@@ -2904,6 +2999,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (30)
@@ -2978,6 +3077,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -4304529744566297767, guid: a3bd28ef0fbf3ca4c9b66e0452d1c57d, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261250224554472981, guid: a3bd28ef0fbf3ca4c9b66e0452d1c57d, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -3052,6 +3155,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (34)
@@ -3129,6 +3236,10 @@ PrefabInstance:
     - target: {fileID: 2679082454875578574, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
       propertyPath: m_Name
       value: book (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4711823096418028291, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4970432566781618533, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
       propertyPath: m_RootOrder
@@ -3260,6 +3371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4440196913269370694, guid: cfc283cb3f11ae941aa300990604b6cf, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc283cb3f11ae941aa300990604b6cf, type: 3}
 --- !u!4 &7664373375941310048 stripped
@@ -3274,6 +3389,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -3744659901182404743, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 551471790341087643, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
       propertyPath: m_Name
       value: book (42)
@@ -3348,6 +3467,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -6563585350957894135, guid: a12125838c204f74797a48f29359fbf1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648416689607862230, guid: a12125838c204f74797a48f29359fbf1, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -3422,6 +3545,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -6563585350957894135, guid: a12125838c204f74797a48f29359fbf1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648416689607862230, guid: a12125838c204f74797a48f29359fbf1, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -3500,6 +3627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4711823096418028291, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4970432566781618533, guid: ce18b4c007f16bd47bdd8e1b35810002, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -3570,6 +3701,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -3744659901182404743, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 551471790341087643, guid: ed934ba3f923ba045b10bf5bef06cd01, type: 3}
       propertyPath: m_Name
       value: book (14)
@@ -3644,6 +3779,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -8444581912816153755, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083230204672879511, guid: 2f4a24e3ae8dc4f40a235c5933a5d9c1, type: 3}
       propertyPath: m_Name
       value: book (33)
@@ -3718,6 +3857,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -6563585350957894135, guid: a12125838c204f74797a48f29359fbf1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648416689607862230, guid: a12125838c204f74797a48f29359fbf1, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -3796,6 +3939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: book (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7689764154838084962, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9111861549713590057, guid: a6bdae8131d98d34e99a2aebd416590a, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -3866,6 +4013,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -4304529744566297767, guid: a3bd28ef0fbf3ca4c9b66e0452d1c57d, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261250224554472981, guid: a3bd28ef0fbf3ca4c9b66e0452d1c57d, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -3940,6 +4091,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -6563585350957894135, guid: a12125838c204f74797a48f29359fbf1, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1648416689607862230, guid: a12125838c204f74797a48f29359fbf1, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -4014,6 +4169,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4803902207513114959}
     m_Modifications:
+    - target: {fileID: -4304529744566297767, guid: a3bd28ef0fbf3ca4c9b66e0452d1c57d, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 261250224554472981, guid: a3bd28ef0fbf3ca4c9b66e0452d1c57d, type: 3}
       propertyPath: m_RootOrder
       value: 25
