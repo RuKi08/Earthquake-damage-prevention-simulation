@@ -5,20 +5,25 @@ using UnityEngine;
 public class playerMove : MonoBehaviour
 {
     public float playerSpeed;
-    public CharacterController characterController;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    int r = 0;
+    
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        int Move = 0;
 
-        characterController.Move(new Vector3(h, 0, v) * playerSpeed * Time.deltaTime);
+        if(Input.GetKey(KeyCode.A) 
+        || Input.GetKey(KeyCode.D) 
+        || Input.GetKey(KeyCode.W) 
+        || Input.GetKey(KeyCode.S)) Move = 1;
+
+        if      (Input.GetKey(KeyCode.A)) r = 3;
+        else if (Input.GetKey(KeyCode.D)) r = 1;
+        else if (Input.GetKey(KeyCode.W)) r = 0;
+        else if (Input.GetKey(KeyCode.S)) r = 2;
+
+        transform.Translate(Move * Vector3.right * playerSpeed * Time.deltaTime);
+        
+        transform.eulerAngles = Vector3.up * r * 90;
     }
 }
