@@ -6,6 +6,7 @@ TagManager:
   tags:
   - book
   - box
+  - Tile
   layers:
   - Default
   - TransparentFX
