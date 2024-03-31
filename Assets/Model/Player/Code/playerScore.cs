@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerScore : MonoBehaviour
 {
     public int score;
-
+    
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Tile") 
