@@ -149,7 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29a6e95e5f1ce644c8bf8bc42e2cf5a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DNASize: 1000
+  ActionInterval: 0.1
   playerSpeed: 3
+  DNA: 
 --- !u!114 &1305530357324065862
 MonoBehaviour:
   m_ObjectHideFlags: 0
