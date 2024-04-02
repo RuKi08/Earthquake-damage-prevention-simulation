@@ -105,8 +105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 854052342628996743}
   m_Layer: 0
-  m_Name: General Wall Unit 1
-  m_TagString: Untagged
+  m_Name: General Wall Unit
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
