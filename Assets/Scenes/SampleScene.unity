@@ -17925,6 +17925,8 @@ MonoBehaviour:
   BaseObject: {fileID: 2527530628911438978}
   ParentObject: {fileID: 308933858}
   ObjectList: []
+  LiveObjectNumber: 0
+  Survivor: 
 --- !u!4 &1244153274
 Transform:
   m_ObjectHideFlags: 0
