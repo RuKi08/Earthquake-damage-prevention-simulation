@@ -17926,7 +17926,8 @@ MonoBehaviour:
   ParentObject: {fileID: 308933858}
   ObjectList: []
   LiveObjectNumber: 0
-  Survivor: 
+  GeneSize: 20
+  MutationSize: 200
 --- !u!4 &1244153274
 Transform:
   m_ObjectHideFlags: 0
