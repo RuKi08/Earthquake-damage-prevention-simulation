@@ -11,7 +11,27 @@ public class gameManager : MonoBehaviour
     {
         instance = this;
     } 
-    public int Count; 
+    public float speed;
+
+
+    [Header ("DNA Setting")]
+    public int DNASize;
+    public int GeneSize;
+    public int MutationSize;
+
+    [Header ("Player Number")]
+    public int PlayerNumber; 
+
+    [Header ("Player Setting")]
+    public float ActionInterval;
+    public float playerSpeed;
+
+    [Header ("Earthquake Setting")]
+    public bool play;
+    public float shakeSpeed = 2.0f;
+    public float shakeAmount = 1.0f;
+    
+    [Header ("etc.")]
     public GameObject BaseObject; 
     public GameObject ParentObject; 
     public List<GameObject> ObjectList = new List<GameObject>(); 
@@ -20,14 +40,15 @@ public class gameManager : MonoBehaviour
 
     void Start()
     {
-        LiveObjectNumber = Count;
+        LiveObjectNumber = PlayerNumber;
 
         SetObject();
     }
 
     void Update()
     {
-        if(LiveObjectNumber <= Count/2) {Reset(); EditorApplication.isPaused = true;}
+        Time.timeScale = speed;
+        if(LiveObjectNumber <= PlayerNumber/2) Reset();
     }
 
     void Reset()
@@ -35,9 +56,9 @@ public class gameManager : MonoBehaviour
         float AllScore = 0;
 
         List<int> Survivor  = new List<int>();
-        int[] PlayerScores  = new int[Count];
+        int[] PlayerScores  = new int[PlayerNumber];
 
-        for (int N = 0; N < Count; N++)
+        for (int N = 0; N < PlayerNumber; N++)
         {
             if(ObjectList[N].gameObject.activeSelf) 
             {
@@ -59,12 +80,9 @@ public class gameManager : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < Count; i++)         ObjectList[i].SetActive(false);
-        for (int i = 0; i < Survivor.Count; i++)ObjectList[Survivor[i]].SetActive(true);
-
         int Survivor_Count_Num = 0;
 
-        for (int i = 0; i < Count; i++)
+        for (int i = 0; i < PlayerNumber; i++)
         {
             if(i == Survivor[Survivor_Count_Num]) 
             {
@@ -81,9 +99,11 @@ public class gameManager : MonoBehaviour
                 ObjectList[i].GetComponent<playerMove>().DNA = Mutation(Heredity((ParentDNA_1, ParentDNA_2)));
             }
         }
+
+        LiveObjectNumber = PlayerNumber;
+        for (int i = 0; i < PlayerNumber; i++) Re_Start(ObjectList[i]);
+
     }
-    
-    public int GeneSize;
 
     int[] Heredity((int[],int[]) DNA)
     {
@@ -100,8 +120,6 @@ public class gameManager : MonoBehaviour
         return childDNA;
     }
 
-    public int MutationSize;
-
     int[] Mutation(int[] TargetDNA)
     {
         int M_size = Random.Range(0, MutationSize);
@@ -116,11 +134,27 @@ public class gameManager : MonoBehaviour
 
     void SetObject()
     {
-        for (int i = 0; i < Count; i++) 
+        for (int i = 0; i < PlayerNumber; i++) 
         {
             ObjectList.Add(Instantiate(BaseObject, ParentObject.transform));
-            ObjectList[i].name = i.ToString();
-            ObjectList[i].SetActive(true);
+
+            playerMove ObjectCode   = ObjectList[i].GetComponent<playerMove>();
+
+            ObjectCode.DNA = new int[DNASize];
+            for(int L = 0; L < DNASize; L++) ObjectCode.DNA[L] = Random.Range(0,6);
+
+            Re_Start(ObjectList[i]);
         } 
+    }
+
+    void Re_Start(GameObject player)
+    {
+        playerMove playerCode   = player.GetComponent<playerMove>();
+        playerCode.StartTime    = Time.time;
+
+        player.transform.position       = ParentObject.transform.position;
+        player.transform.eulerAngles    = Vector3.zero;
+
+        player.SetActive(true);
     }
 }

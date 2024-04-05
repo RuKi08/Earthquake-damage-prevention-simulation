@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class earthquakeCode : MonoBehaviour
 {
-    public bool play;
-
-    public float shakeSpeed = 2.0f;
-    public float shakeAmount = 1.0f;
+    float shakeSpeed;
+    float shakeAmount;
  
     Rigidbody rb;
 
@@ -17,11 +15,14 @@ public class earthquakeCode : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>();
         originPosition = transform.localPosition;
+
+        shakeSpeed  = gameManager.instance.shakeSpeed;
+        shakeAmount = gameManager.instance.shakeAmount;
     }
 
     void Update()
     {
-        if (play)
+        if (gameManager.instance.play)
         {
             float y = Mathf.Cos(Time.time * 360 * Mathf.Deg2Rad * shakeSpeed)*shakeAmount;
             rb.velocity = new Vector3(y, 0, y);

@@ -4,26 +4,14 @@ using UnityEngine;
 
 public class playerMove : MonoBehaviour
 {
-    public int DNASize;
-    public float ActionInterval;
-    public float playerSpeed;
-
     public int[] DNA;
+    public float StartTime;
 
-    float StartTime;
     int r = 0;
-
-    void Start()
-    {
-        DNA = new int[DNASize];
-        for(int i = 0; i < DNA.Length; i++) DNA[i] = Random.Range(0,6);
-
-        StartTime = Time.time;
-    }
     
     void Update()
     {
-        int time = (int)((Time.time - StartTime)/ActionInterval);
+        int time = (int)((Time.time - StartTime)/gameManager.instance.ActionInterval);
         int Move = 1;
 
         if(time < DNA.Length)
@@ -37,7 +25,7 @@ public class playerMove : MonoBehaviour
                 default: Move = 0;  break;
             }
 
-            transform.Translate(Move * Vector3.right * playerSpeed * Time.deltaTime);
+            transform.Translate(Move * Vector3.right * gameManager.instance.playerSpeed * Time.deltaTime);
             
             transform.eulerAngles = Vector3.up * r * 90;
         }
