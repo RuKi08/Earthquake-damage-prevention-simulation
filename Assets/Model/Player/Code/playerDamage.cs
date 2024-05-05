@@ -12,7 +12,6 @@ public class playerDamage : MonoBehaviour
             
             if(damage > 1) GameOver();
         }
-        else if(other.transform.parent.gameObject.tag == "wall") GameOver();
     }   
 
     void GameOver()

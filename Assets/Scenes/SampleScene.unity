@@ -17917,12 +17917,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  time: 100
   DNASize: 1000
   GeneSize: 50
   MutationSize: 500
   PlayerNumber: 100
   ActionInterval: 0.1
-  playerSpeed: 3
+  playerSpeed: 2
   play: 0
   shakeSpeed: 5
   shakeAmount: 1

@@ -25,9 +25,15 @@ public class playerMove : MonoBehaviour
                 default: Move = 0;  break;
             }
 
-            transform.Translate(Move * Vector3.right * gameManager.instance.playerSpeed * Time.deltaTime);
-            
             transform.eulerAngles = Vector3.up * r * 90;
+            transform.Translate(Move * Vector3.right * gameManager.instance.playerSpeed * Time.deltaTime);
+        }
+    }
+    void OnTriggerStay(Collider other)
+    {
+        if(other.transform.parent.gameObject.tag == "wall")
+        {
+            transform.Translate(2*Vector3.left * gameManager.instance.playerSpeed * Time.deltaTime);
         }
     }
 }

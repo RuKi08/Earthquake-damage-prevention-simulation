@@ -12,6 +12,7 @@ public class gameManager : MonoBehaviour
         instance = this;
     } 
     public float speed;
+    public float time;
 
 
     [Header ("DNA Setting")]
@@ -37,10 +38,12 @@ public class gameManager : MonoBehaviour
     public List<GameObject> ObjectList = new List<GameObject>(); 
 
     public int LiveObjectNumber;
+    float StartTime;
 
     void Start()
     {
         LiveObjectNumber = PlayerNumber;
+        StartTime = Time.time;
 
         SetObject();
     }
@@ -48,11 +51,13 @@ public class gameManager : MonoBehaviour
     void Update()
     {
         Time.timeScale = speed;
-        if(LiveObjectNumber <= PlayerNumber/2) Reset();
+        if(time < Time.time - StartTime) Reset();
     }
 
     void Reset()
     {
+        StartTime = Time.time;
+
         float AllScore = 0;
 
         List<int> Survivor  = new List<int>();
